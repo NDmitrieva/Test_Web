@@ -40,9 +40,9 @@ public class WebTest {
     }
 
     @Test
-    void shouldTest() {
+    void shouldToSendOrderForm() {
         driver.get("http://localhost:9999");
-        driver.findElement(By.cssSelector("[type='text']")).sendKeys("Петрова Ирина");
+        driver.findElement(By.cssSelector("[type='text']")).sendKeys("Петрова-Иванова Ирина");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+70000000000");
         driver.findElement(By.cssSelector(".checkbox__box")).click();
         driver.findElement(By.cssSelector("button")).click();
